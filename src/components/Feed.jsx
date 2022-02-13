@@ -1,7 +1,11 @@
-import React from "react";
+import { Container, makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({}));
 
 const Feed = () => {
-	return <div>Feed</div>;
+	const classes = useStyles();
+
+	return <Container>Feed </Container>;
 };
 
 export default Feed;

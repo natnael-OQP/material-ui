@@ -1,7 +1,10 @@
-import React from "react";
+import { Container, makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({}));
 
 const RightBar = () => {
-	return <div>RightBar</div>;
+	const classes = useStyles();
+	return <Container>RightBar</Container>;
 };
 
 export default RightBar;
