@@ -5,6 +5,7 @@ import LeftBar from "./components/Leftbar";
 import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
 import RightBar from "./components/Rightbar";
+import Add from "./components/Add";
 
 const useStyles = makeStyles((theme) => ({
 	wrapper: {
@@ -26,16 +27,17 @@ function App() {
 		<div>
 			<Navbar />
 			<Grid container className={classes.wrapper}>
-				<Grid item sm={2} xs={2}>
+				<Grid item lg={2} xs={2}>
 					<LeftBar />
 				</Grid>
-				<Grid item sm={7} xs={10}>
+				<Grid item lg={7} xs={10}>
 					<Feed />
 				</Grid>
-				<Grid item sm={3} className={classes.right}>
+				<Grid item lg={3} className={classes.right}>
 					<RightBar />
 				</Grid>
 			</Grid>
+			<Add />
 		</div>
 	);
 }
